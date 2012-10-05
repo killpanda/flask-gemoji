@@ -7,7 +7,7 @@ setup(
     py_modules=['flask_gemoji'],
     author="Mark Steve Samson",
     author_email='hello@marksteve.com',
-    description="Add gemojis to your Jinja templates",
+    description="Add gemojis to your Flask apps",
     long_description=open('README.md').read(),
     url='https://github.com/marksteve/flask-gemoji',
     include_package_data=True,
