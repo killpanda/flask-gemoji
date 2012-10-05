@@ -7,7 +7,7 @@ long_description = open(readme_path).read()
 
 setup(
     name='flask-gemoji',
-    version='0.1.1',
+    version='0.1.2',
     packages=['flask_gemoji'],
     author="Mark Steve Samson",
     author_email='hello@marksteve.com',
