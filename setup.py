@@ -8,7 +8,7 @@ long_description = open(readme_path).read()
 setup(
     name='flask-gemoji',
     version='0.1.1',
-    py_modules=['flask_gemoji'],
+    packages=['flask_gemoji'],
     author="Mark Steve Samson",
     author_email='hello@marksteve.com',
     description="Add gemojis to your Flask apps",

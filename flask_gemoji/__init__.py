@@ -10,7 +10,7 @@ class Gemoji(object):
     def init_app(self, app):
         app.config.setdefault('GEMOJI_CLASS', 'gemoji')
         gemoji_images_path = (pkg_resources
-            .resource_filename(__name__, 'static/images/emoji'))
+            .resource_filename(__package__, 'static/images/emoji'))
         names = map(lambda s: os.path.splitext(s)[0],
                     filter(lambda s: s.endswith('.png'),
                            os.listdir(gemoji_images_path)))
