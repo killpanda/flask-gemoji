@@ -1,7 +1,7 @@
 import os
 import pkg_resources
 
-from flask import Blueprint, url_for
+from flask import Blueprint, url_for, Markup
 
 
 class Gemoji(object):
@@ -26,13 +26,13 @@ class Gemoji(object):
             for i, w in enumerate(splits):
                 if w in names:
                     out = out[:-1]
-                    out += '<img src="%s" alt="%s" class="%s" height="%s">' % (
+                    out += Markup('<img src="%s" alt="%s" class="%s" height="%s">' % (
                         url_for('gemoji.static',
                                 filename='images/emoji/%s.png' % w),
                         w,
                         app.config['GEMOJI_CLASS'],
                         height,
-                    )
+                    ))
                 elif i + 1 < splits_len:
                     out += w + ':'
                 else:
